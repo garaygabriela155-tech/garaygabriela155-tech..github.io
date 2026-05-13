@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<center><h1 class="titulo-patria">Centro de Educación Media Gubernamental Patria</h1> </center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <center>Carrusel Estilo BrandLyft </center></title>
+    <style>
+    
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #00BFFF; /* Fondo crema de la imagen */
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+.caja-carrera {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #00BFFF; 
+    color: white !important;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.caja-carrera:hover {
+    background-color: #0080FF;
+    transform: scale(1.05);
+}
+
+        <center> .carousel tu-clase-del-carrusel</center> {
+    margin-top: 10px;
+     }-section {
+            width: 100%;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+ .fila-cuadros {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los dos cuadros */
+    width: 95%;
+    margin: 20px auto;
+}
+
+/* Ajustamos el cuadro para que quepan dos */
+.contenedor-info {
+    flex: 1; /* Esto hace que ambos midan lo mismo */
+    max-width: 500px; 
+    min-height: 500px;
+    border: 3px solid #00BFFF;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+       .carousel-container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden; /* Esto es vital */
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+
+/* 2. La tira larga que mueve las fotos */
+.carousel-track {
+    display: flex;
+    width: max-content; /* Se estira según el número de fotos */
+    animation: scroll 20s linear infinite;
+}
+
+/* 3. El cuadrito de cada foto */
+.card {
+    width: 280px;      /* Tamaño fijo */
+    flex: 0 0 280px;   /* No deja que se encojan ni se agranden */
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Para que no se miren estiradas */
+    border-radius: 15px;
+}
+
+/* 4. El movimiento */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-280px * 6)); } /* Mueve las 6 fotos */
+}
+
+       
+        @keyframes scroll- {
+            0% {transform: translateX(0); }
+            100% {transform: translateX(-1000px);
+            }
+        }
+
+        /* Pausar cuando el usuario pone el mouse encima */
+        .carousel-track:hover {
+            animation-play-state: paused; infinite;
+        }
+/* pie de pagina */
+.footer{
+	color:black;
+	padding:20px;
+
+    background-color: #0080FF;
+}
+
+    </style>
+</head>
+<body>
+
+   <div class="carousel-container">
+  <div class="carousel-track">
+    <!-- Tarjetas de imagen (Repite este bloque para llenar el carrusel) -->
+    <div class="card"><img src="imagenes/imgeninfo.jpg" alt="Video 1"></div>
+    <div class="card"><img src="imagenes/imgfinanzas.jpg" alt="Video 2"></div>
+    <div class="card"><img src="imagenes/imgmercado.jpg" alt="Video 3"></div>
+    <div class="card"><img src="imagenes/bilingue.jpg" alt="Video 4"></div>
+    <div class="card"><img src="imagenes/ciencias.jpg" alt="Video 5"></div>
+   <div class="card"><img src="imagenes/mecanica.jpg" alt="Video 5"></div>
+ <div class="card"><img src="imagenes/imgeninfo.jpg" alt="Video 1"></div>
+    <div class="card"><img src="imagenes/imgfinanzas.jpg" alt="Video 2"></div>
+    <div class="card"><img src="imagenes/imgmercado.jpg" alt="Video 3"></div>
+    <div class="card"><img src="imagenes/bilingue.jpg" alt="Video 4"></div>
+    <div class="card"><img src="imagenes/ciencias.jpg" alt="Video 5"></div>
+   <div class="card"><img src="imagenes/mecanica.jpg" alt="Video 5"></div>
+</div>
+
+
+
+<!-- Sección de enlaces en cuadritos -->
+<div style="text-align: center; margin: 30px 0;">
+    <a href="Carreras/informatica.html" class="caja-carrera">Informática</a>
+    <a href="Carreras/finanzas.html" class="caja-carrera">Finanzas</a>
+    <a href="Carreras/mercadotecnia.html" class="caja-carrera">Mercadotecnia</a>
+    <a href="Carreras/ejecutivo.html" class="caja-carrera">Ejecutivo Bilingüe</a>
+    <a href="Carreras/ciencias.html" class="caja-carrera">Ciencias</a>
+    <a href="Carreras/mecanica.html" class="caja-carrera">Mecánica</a>
+</div>
+<div class="fila-cuadros">
+
+    <!-- 2. Primer cuadro -->
+    <div class="contenedor-info" id="cuadroTexto1">
+        <h3>Informatica</h3>
+        <p>La carrera de informática brinda altas oportunidades laborales, salarios competitivos y la capacidad de resolver problemas
+ complejos mediante la tecnología. Ofrece una formación versátil para diseñar software, gestionar datos, garantizar
+ la ciberseguridad y liderar proyectos de inteligencia artificial o robótica, siendo una carrera esencial en la transformación digita.</p><img src="imagenes/imgeninfo.jpg" width="50%">
+    </div>
+
+    <!-- 3. Segundo cuadro (el nuevo) -->
+    <div class="contenedor-info" id="cuadroTexto2">
+        <h3>Beneficios y Oportunidades claves</h3>
+        <p>-Alta Demanda Laboral: Existe un campo de trabajo amplio y en constante crecimiento, no solo en empresas de tecnología, sino en casi cualquier industria.
+
+
+-Versatilidad de Roles: Permite trabajar como desarrollador de software, ingeniero de datos, analista de ciberseguridad, experto en IA, o arquitecto de redes.
+
+
+-Desarrollo de Habilidades Lógicas: Fomenta el pensamiento crítico, la resolución de problemas complejos, la creatividad y la capacidad de abstracción.
+
+
+-Salarios Competitivos:El sector tecnológico es reconocido por ofrecer sueldos atractivos, incluso en niveles técnicos iniciales, como mencionan en </p><img src="imagenes/veneficios.jpg" width="50%">
+    </div>
+
+
+
+</div> <!-- Aquí termina la fila -->
+
+<div class="footer">
+	<h3><p>Ubicacion: La lima, Cortes</p>   
+	<p>Telefono: 9078-8278</p>
+	<p>Correo: InstitutoPatria@Gmail.com</p>  
+	<p>Alumna: Gabriela Denice Muñoz Garay</p></h3>	
+</div>
